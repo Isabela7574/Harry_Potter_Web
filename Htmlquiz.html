@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+     <head>
+       <link rel = "stylesheet"
+                type = "text/css"
+                 href = "strangerstyle.css" />
+            
+            
+            <!--Menu bar-->
+           <div class="menu">
+               <ul>
+                    <li><a href="StrangerThings.html">Home</a></li>
+                    <li><a href="about1us.html">About Us</a></li>
+                    <li><a href="dictionary.html">Dictionary</a></li>
+                    <!--seasons-->
+                    <li id="seasons">
+                        <div class="dropdown">
+                                <button class="dropbtn">Seasons</button>
+                                <div class="dropdown-content">
+                                    <a href="SummaryOfSeason1.html">Season 1</a> 
+                                    <a href="SummaryOfSeason2.html">Season 2</a> 
+                                    <a href="summmaryOfSeason3.html">Season 3</a> 
+                                </div>
+                        </div>
+                    </li>
+                    <!--Quizzes -->
+                    <li id="quizzes">
+                        <div class="dropdown">
+                                <button class="dropbtn">Quizzes</button>
+                                <div class="dropdown-content">
+                                    <a href="charecter.html">Character Quiz</a> <!-- DONT FORGET TO ADD QUIZ LINKS HERE!! -->
+                                    <a href="trivia.html">Trivia Quiz</a> <!-- DONT FORGET TO ADD QUIZ LINKS HERE!! -->
+                                    <a href="Htmlquiz.html">Html Quiz</a> <!-- DONT FORGET TO ADD QUIZ LINKS HERE!! -->
+                                </div>
+                        </div>
+                    </li>
+               </ul>
+           </div>
+       
+        <title>HTML Quiz</title>
+        <script src = "Htmlquiz.js" ></script>
+        <style>
+        body{background: rgb(54,121,9);
+        background: linear-gradient(90deg, rgba(54,121,9,1) 0%, rgba(100,242,239,1) 100%);};
+        </style>
+        </head>
+     
+     
+        <body>
+            <h1>Html quiz </h1>
+              
+        <form id = "quiz" name = "quiz">
+         
+    
+            <br>What letter goes in a tag to create a paragraph?<br>
+            <input type="radio" name="question1" value="T"/><label>T</label><br>
+            <input type="radio" name="question1" value="P"/><label>P</label><br>
+            <input type="radio" name="question1" value="G"/><label>G</label><br>
+            <input type="radio" name="question1" value="Y"/><label>Y</label><br>
+            
+    
+   
+            <br>What goes at the end of a html file?<br>
+             <input type="radio" name="question2" value=".ht"/><label>.ht</label><br>
+             <input type="radio" name="question2" value=".ml"/><label>.ml</label><br>
+             <input type="radio" name="question2" value=".js"/><label>.js</label><br>
+             <input type="radio" name="question2" value=".html"/><label>.html</label><br>
+             
+       
+             <br>Which tag would create the biggest header?<br>
+              <input type="radio" name="question3" value="h6"/><label>h6</label><br>
+              <input type="radio" name="question3" value="h3"/><label>h3</label><br>
+              <input type="radio" name="question3" value="h1"/><label>h1</label><br>
+              <input type="radio" name="question3" value="h2"/><label>h2</label><br>
+           
+              <br>What is another type of file that creates the design of a website?<br>
+              <input type="radio" name="question4" value="CSS"/><label>CSS</label><br>
+              <input type="radio" name="question4" value="JavaScript"/><label>JavaScript</label><br>
+              <input type="radio" name="question4" value="Scratch"/><label>Scratch</label><br>
+              <input type="radio" name="question4" value="None of the Above"/><label>None of the above</label><br>
+            
+            
+               <input type="reset" value="Start Over"/>
+               
+            
+        </form>   
+             <button id = "button" type = "button" value = "Submit" onclick = "checkHtmlQuiz();" > Submit</button>  
+        
+             
+             <br>
+    
+                
+             <h2> Thank you for taking this quiz!</h2>
+             
+            
+            
+        </body>
+        
+        
+    </html>
