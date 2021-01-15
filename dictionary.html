@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <!-- fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+              <link rel = "stylesheet"
+                type = "text/css"
+                 href = "strangerstyle.css" />
+        
+            
+            
+            <!--Menu bar-->
+           <div class="menu">
+               <ul>
+                    <li><a href="StrangerThings.html">Home</a></li>
+                    <li><a href="about1us.html">About Us</a></li>
+                    <li><a href="dictionary.html">Dictionary</a></li>
+                    <!--seasons-->
+                    <li id="seasons">
+                        <div class="dropdown">
+                                <button class="dropbtn">Seasons</button>
+                                <div class="dropdown-content">
+                                    <a href="SummaryOfSeason1.html">Season 1</a> 
+                                    <a href="SummaryOfSeason2.html">Season 2</a> 
+                                    <a href="summmaryOfSeason3.html">Season 3</a> 
+                                </div>
+                        </div>
+                    </li>
+                    <!--Quizzes -->
+                    <li id="quizzes">
+                        <div class="dropdown">
+                                <button class="dropbtn">Quizzes</button>
+                                <div class="dropdown-content">
+                                    <a href="charecter.html">Character Quiz</a> <!-- DONT FORGET TO ADD QUIZ LINKS HERE!! -->
+                                    <a href="trivia.html">Trivia Quiz</a> <!-- DONT FORGET TO ADD QUIZ LINKS HERE!! -->
+                                    <a href="Htmlquiz.html">Html Quiz</a> <!-- DONT FORGET TO ADD QUIZ LINKS HERE!! -->
+                                </div>
+                        </div>
+                    </li>
+               </ul>
+           </div>
+       
+        </head>
+        
+        <body>
+            <style>
+                body {
+                    background: rgb(206,230,13);
+                    background: linear-gradient(90deg, rgba(206,230,13,1) 0%, rgba(242,81,13,1) 64%, rgba(242,13,13,1) 100%);
+                    font-family: 'Grenze', serif;
+                }
+            </style>
+            
+            <!-- character buttons -->
+            <h1>Dictionary:</h1>
+            <h3>Just Press a button to learn more about each character.</h3>
+            <button id = "Dustin" type="button" value="Dustin" onclick="showBio(1);">Dustin</button>
+            <button id = "Lucas" type="button" value="Lucas" onclick="showBio(2);">Lucas</button>
+            <button id = "Mike" type="button" value="Mike" onclick="showBio(3);">Mike</button>
+            <button id = "Will" type="button" value="Will" onclick="showBio(4);">Will</button>
+            <button id = "Eleven" type="button" value="Eleven" onclick="showBio(5);">Eleven</button>
+            <button id = "Demogorgon" type="button" value="Demogorgon" onclick="showBio(6);">Demogorgon</button>
+            <button id = "Joyce" type="button" value="Joyce" onclick="showBio(7);">Joyce</button>
+            <button id = "Hopper" type="button" value="Hopper" onclick="showBio(8);">Hopper</button>
+            <button id = "Nancy" type="button" value="Nancy" onclick="showBio(9);">Nancy</button>
+            <button id = "Steve" type="button" value="Steve" onclick="showBio(10);">Steve</button>
+            <button id = "Jonathan" type="button" value="Jonathan" onclick="showBio(11);">Jonathan</button>
+            <button id = "Max" type="button" value="Max" onclick="showBio(12);">Max</button>
+            <button id = "Billy" type="button" value="Billy" onclick="showBio(13);">Billy</button>
+            <button id = "Alexei" type="button" value="Alexei" onclick="showBio(14);">Alexei</button>
+            <button id = "Murray" type="button" value="Murray" onclick="showBio(15);">Murray</button>
+            <button id = "drbrenner" type="button" value="drbrenner" onclick="showBio(16);">Dr.Brenner</button>
+            
+                        
+            
+            <br><br>
+            <br><br><br>
+        
+            <!-- iFrame displaying bio -->
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+            <script type="text/javascript">
+                //returns the iframe html code to be embedded upon click of button
+                function addCode(topic) {
+                    return '<iframe id="iframe" src="' + topic + '.html" width="700" height="450"></iframe>';
+                }
+                
+                
+                //determines which html file should load on iframe on click of button
+                $(function() {
+                    //harry
+                    $("#Dustin").click(function() {
+                        $("#bio").html(addCode("Dustin"));
+                    });
+                    //hermione
+                    $("#Lucas").click(function() {
+                        $("#bio").html(addCode("Lucas"));
+                    });
+                    //Ron
+                    $("#Mike").click(function() {
+                        $("#bio").html(addCode("Mike"));
+                    });
+                    //Draco
+                    $("#Will").click(function() {
+                        $("#bio").html(addCode("Will"));
+                    });
+                    //Ginny
+                    $("#Eleven").click(function() {
+                        $("#bio").html(addCode("Eleven"));
+                    });
+                    //Luna
+                    $("#Demogorgon").click(function() {
+                        $("#bio").html(addCode("Demogorgon"));
+                    });
+                    //Dobby
+                    $("#Joyce").click(function() {
+                        $("#bio").html(addCode("Joyce"));
+                    });
+                    //Dumbledore
+                    $("#Hopper").click(function() {
+                        $("#bio").html(addCode("Hopper"));
+                    });
+                   
+                    //Voldemort
+                    $("#Nancy").click(function() {
+                        $("#bio").html(addCode("Nancy"));
+                    });
+                    //Hedwig
+                    $("#Steve").click(function() {
+                        $("#bio").html(addCode("Steve"));
+                    });
+                    //Platform 9 3/4
+                    $("#Jonathan").click(function() {
+                        $("#bio").html(addCode("Jonathan"));
+                    });
+                    
+                    //Deathly Hallows
+                    $("#Max").click(function() {
+                        $("#bio").html(addCode("Max"));
+                    });
+                    //Dark Mark
+                    $("#Billy").click(function() {
+                        $("#bio").html(addCode("Billy"));
+                    });
+                    //Sorting Hat
+                    $("#Alexei").click(function() {
+                        $("#bio").html(addCode("Alexei"));
+                    });
+                    //Gryffindor
+                    $("#Murray").click(function() {
+                        $("#bio").html(addCode("Murray"));
+                    });
+                    
+                    //Ravenclaw
+                    $("#drbrenner").click(function() {
+                        $("#bio").html(addCode("drbrenner"));
+                    });
+                    
+                });
+   
+            </script>
+            <div id="bio"></div>
+            
+        </body>
+    </html>
